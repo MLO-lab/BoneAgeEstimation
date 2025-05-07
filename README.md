@@ -1,5 +1,5 @@
 # BoneAgeEstimation
-This project estimates bone age based on spatial features extracted from multiplex images. The pipeline includes data loading, spatial transformation, probability density estimation, machine learning-based age prediction, and visualization of results.
+This project estimates bone age based on spatial features extracted from multiplex images, aiming to relate the spatial remodeling introduced by treatment with the aging process. The pipeline includes data loading, spatial transformation, probability density estimation, machine learning-based age prediction, and visualization of results. 
 
 
 -  [Requirements](#requirements)
