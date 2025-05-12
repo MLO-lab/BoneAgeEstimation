@@ -12,7 +12,8 @@ This project estimates bone age based on spatial features extracted from multipl
    - [5. Bone Age Estimation](#5-bone-age-estimation)
    - [6. Visualization](#6-visualization)
 
-- [Usage](#usage)
+-  [Usage](#usage)
+-  [Example](#example)
 
 ---
 
@@ -40,7 +41,7 @@ To ensure proper functionality, organize your data in the following folder struc
   - **`<condition>/`**: For the condition of interest (e.g., "3mo", "5fu30d"). One subfolder for one condition. The .ims files should be placed under the corresponding condition folder.
   - **`affinity_matrices/`**: For cluster affinity matrices.
   - The positions CSV files should be placed under the folder directly.
-
+--- 
 ## Workflow
 
 ### 0. Libraries and Parameters
@@ -86,3 +87,12 @@ This section generates various visualizations to interpret the results of the bo
 1. **Run each section of the pipeline sequentially**, ensuring all paths and parameters are correctly set for your specific dataset.
 2. **Inspect intermediate visualizations** to verify data quality and make adjustments as needed.
 3. **Save output figures** and clustering data as needed for further analysis or reporting.
+
+---
+## Example
+The transforamtion.ipynb notebook serves as an example illustrating the transformation of the bone samples to a reference space. It used the real outlines saved under the folder `examples`, which includes the following steps:
+1. **Parameter Setting**: Keep the parameters as they are, or adjust them according to your needs based on the recommendations in the notebook.
+2. **Outline Visualization**: Visualize the outlines of the bone samples.
+3. **Generate Data**: Randomly generate data as the cells. Optionally, we also included horizontal lines as anoter example of the data.
+4. **Generate Structured Anchors**: Generate structured anchors for the transformation.
+5. **Perform Transformation**: Perform the transformation of the data to the reference space.
